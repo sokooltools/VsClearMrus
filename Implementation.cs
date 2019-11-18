@@ -31,7 +31,7 @@ namespace SokoolTools.VsClearMrus
 			}
 
 			// TODO: Implement for Visual Studio versions "15.0", "16.0" 
-			// Values are stored in private registry!
+			// Need to access their values stored in private registry!
 			// %AppData%\..\Local\Microsoft\VisualStudio\15.0_dc61f966\privateregistry.bin
 			// %AppData%\..\Local\Microsoft\VisualStudio\16.0_6e759407\privateregistry.bin
 
