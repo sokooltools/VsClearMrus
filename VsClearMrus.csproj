@@ -74,6 +74,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="PostBuild.bat" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,11 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\image01.png" />
+    <Content Include="license.txt" />
     <Content Include="VsClearMrus.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"%25DOCUMENTS%25\Visual Studio 2015\DevTools\Postbuild.bat" "$(ConfigurationName)" "$(SolutionDir)" "$(ProjectName)" "$(TargetDir)" "$(TargetName)"</PostBuildEvent>
+    <PostBuildEvent>"$(ProjectDir)Postbuild.bat" "$(ConfigurationName)" "$(SolutionDir)" "$(ProjectName)" "$(TargetDir)" "$(TargetName)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
