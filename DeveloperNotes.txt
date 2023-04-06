@@ -1,0 +1,11 @@
+﻿To change values in the private registry hive by hand, you can use regedit.exe to load a private hive. 
+
+You need to select the HKEY_USERS node, and click the File > Load Hive… menu. 
+
+You select the %LOCALAPPDATA%\Microsoft\VisualStudio\15.0_<id>\privateregistry.bin file, give a name 
+to the hive (I entered VS2017PrivateRegistry) and now you can see the 15.0_<id>_Config key populated as usual
+
+MRUItems
+
+Note: use File > Unload Hive when done
+

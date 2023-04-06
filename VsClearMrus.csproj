@@ -87,9 +87,13 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DeveloperNotes.txt" />
     <Content Include="Images\image01.png" />
     <Content Include="license.txt" />
     <Content Include="VsClearMrus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SolutionFiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
